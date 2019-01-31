@@ -1,0 +1,7 @@
+S:\Research\sso\SSOLib\bin\Release\SSOLib.dll.config
+S:\Research\sso\SSOLib\bin\Release\SSOLib.dll
+S:\Research\sso\SSOLib\bin\Release\SSOLib.XmlSerializers.dll
+S:\Research\sso\SSOLib\bin\Release\SSOLib.pdb
+S:\Research\sso\SSOLib\obj\Release\SSOLib.dll
+S:\Research\sso\SSOLib\obj\Release\SSOLib.pdb
+S:\Research\sso\SSOLib\obj\Release\SSOLib.XmlSerializers.dll

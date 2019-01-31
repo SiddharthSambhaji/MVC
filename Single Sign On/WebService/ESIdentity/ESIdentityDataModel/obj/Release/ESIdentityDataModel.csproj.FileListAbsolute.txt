@@ -1,0 +1,9 @@
+S:\www\ESIdentity\ESIdentityDataModel\bin\Release\ESIdentityDataModel.dll.config
+S:\www\ESIdentity\ESIdentityDataModel\bin\Release\ESIdentityDataModel.dll
+S:\www\ESIdentity\ESIdentityDataModel\bin\Release\ESIdentityDataModel.pdb
+S:\www\ESIdentity\ESIdentityDataModel\bin\Release\EntityFramework.dll
+S:\www\ESIdentity\ESIdentityDataModel\bin\Release\EntityFramework.SqlServer.dll
+S:\www\ESIdentity\ESIdentityDataModel\bin\Release\EntityFramework.xml
+S:\www\ESIdentity\ESIdentityDataModel\bin\Release\EntityFramework.SqlServer.xml
+S:\www\ESIdentity\ESIdentityDataModel\obj\Release\ESIdentityDataModel.dll
+S:\www\ESIdentity\ESIdentityDataModel\obj\Release\ESIdentityDataModel.pdb
