@@ -1,0 +1,85 @@
+﻿@model Assignment.Models.Employee
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Registration Form</h1>
+</div>
+<div class="row">
+
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <ol>
+        <li>Create a MVC project and implement Signup form including fields First name, Last name, Email, Phone, Address, Gender, Password, Confirm Password and Agreement checkbox and submit button.</li>
+        <li>Perform MVC validations on each field on submit button click as per the model property data annotations(NOTE Should not implement custom jQuery validation).</li>
+        <li>After correct data entered into the form call the action method will further call web api method.</li>
+        <li>Create WebAPI project with post method which accept the form data and store it into the db and return the success/failure message in response.</li>
+        <li>Host this WebAPI project in local IIS in your machine.</li>
+        <li>There will be two separate projects one for Signup and another for WebAPI.</li>
+        <li>Display the success/failure method back to your view via web api response.</li>
+    </ol>
+   
+
+    @using (Html.BeginForm("RegisterEmployee", "Home", FormMethod.Post))
+    {
+
+        <div class="col-md-12">
+            <table border="0" cellspacing="5" cellpadding="5">
+                <tr>
+                    <td>@Html.LabelFor(m => m.FirstName)</td>
+                    <td>@Html.TextBoxFor(m => m.FirstName)</td>
+                    <td>@Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.LastName)</td>
+                    <td>@Html.TextBoxFor(m => m.LastName)</td>
+                    <td>@Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Gender)</td>
+                    <td>@Html.DropDownListFor(m => m.Gender, new List<SelectListItem>
+                                    { new SelectListItem {Text="Male", Value="M" },
+                                     new SelectListItem {Text="Female", Value="F" }},
+                                     "Please Select")</td>
+                    <td>@Html.ValidationMessageFor(m => m.Gender, "", new { @class = "text-danger" })</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Email)</td>
+                    <td>@Html.TextBoxFor(m => m.Email)</td>
+                    <td>@Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Phone)</td>
+                    <td>@Html.TextBoxFor(m => m.Phone)</td>
+                    <td>@Html.ValidationMessageFor(m => m.Phone, "", new { @class = "text-danger" })</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Password)</td>
+                    <td>@Html.TextBoxFor(m => m.Password)</td>
+                    <td>@Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })</td>
+                </tr>
+                <tr>
+                    <td>@Html.LabelFor(m => m.Address)</td>
+                    <td>@Html.TextAreaFor(m => m.Address)</td>
+                    <td>@Html.ValidationMessageFor(m => m.Address, "", new { @class = "text-danger" })</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right"><input class="btn btn-success" type="submit" name="btnSubmit" value="Submit" /></td>
+                </tr>
+            </table>
+        </div>
+        
+                           
+                           
+                       
+                                
+       
+
+
+    }
+
+
+
+
+
+</div>
